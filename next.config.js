@@ -1,4 +1,18 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    experimental: {
+        serverActions: true,
+    },
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'v3-icabank-kyc.s3.amazonaws.com',
+                port: '',
+                pathname: '/**',
+            },
+        ],
+    },
+}
 
 module.exports = nextConfig

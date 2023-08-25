@@ -1,3 +1,10 @@
 {
-  "extends": "next/core-web-vitals"
+    "extends": [
+        "next",
+        "prettier",
+        "plugin:jsx-a11y/recommended",
+        "plugin:prettier/recommended",
+        "plugin:sonarjs/recommended",
+        "plugin:security/recommended"
+    ]
 }
